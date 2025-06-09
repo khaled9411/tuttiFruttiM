@@ -1,0 +1,3 @@
+#Card {
+    --uitk-animation: "controller first";
+}

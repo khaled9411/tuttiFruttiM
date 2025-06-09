@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8cb9d78d2b5caec41b7d8f44745b8e79
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137126
+  packageName: POLYGON Prototype - Low Poly 3D Art by Synty
+  packageVersion: 1.8.1
+  assetPath: Assets/PolygonPrototype/Scenes/DemoSettings.lighting
+  uploadId: 646873

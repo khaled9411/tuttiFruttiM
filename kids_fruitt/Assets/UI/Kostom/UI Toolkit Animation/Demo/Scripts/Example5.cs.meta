@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7d1df8c045b20493eba273f7287733d6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295756
+  packageName: UI Toolkit Animation Lite
+  packageVersion: 1.2.0
+  assetPath: Assets/Kostom/UI Toolkit Animation/Demo/Scripts/Example5.cs
+  uploadId: 728408

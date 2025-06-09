@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 100b9c21446d63e489474c086e21bd99
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 277594
+  packageName: Platformer 5 Fruits - Low Poly 3D Models Pack
+  packageVersion: 2.0
+  assetPath: Assets/ithappy/Platformer_5_Fruits/Scripts/OscillatePosition.cs
+  uploadId: 731682

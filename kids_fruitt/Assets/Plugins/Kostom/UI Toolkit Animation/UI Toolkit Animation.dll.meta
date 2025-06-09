@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: c3d14ee58996c4c80ba1978f18484323
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder: {}
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+  - first:
+      Any: 
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295756
+  packageName: UI Toolkit Animation Lite
+  packageVersion: 1.2.0
+  assetPath: Assets/Plugins/Kostom/UI Toolkit Animation/UI Toolkit Animation.dll
+  uploadId: 728408

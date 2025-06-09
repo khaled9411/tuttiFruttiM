@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d2d15dfea91924cfa9bdd7647a40c5b9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295756
+  packageName: UI Toolkit Animation Lite
+  packageVersion: 1.2.0
+  assetPath: Assets/Kostom/UI Toolkit Animation/Demo/UI Element/UI Toolkit/PanelSettings.asset
+  uploadId: 728408

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 40e79ae4c0776274cb5b753b1bb3ee1e
+timeCreated: 1557065320
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264594
+  packageName: Easy IAP (In App Purchase) v2.0
+  packageVersion: 2.0.7
+  assetPath: Assets/Gley/EasyIAP/Documentation/Gley-EasyIAP-Documentation.pdf
+  uploadId: 741889

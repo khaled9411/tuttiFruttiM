@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e76ae2aae34bec744a05361b56621ccf
+timeCreated: 1577967898
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266331
+  packageName: Mobile Ads v2.0
+  packageVersion: 2.0.17
+  assetPath: Assets/Gley/MobileAds/Example/Scenes/MobileAdsTest.unity
+  uploadId: 748769

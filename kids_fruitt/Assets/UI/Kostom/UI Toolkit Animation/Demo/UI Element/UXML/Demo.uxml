@@ -1,0 +1,93 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Kostom/UI%20Toolkit%20Animation/Demo/UI%20Element/UXML/DemoUSS.uss?fileID=7433441132597879392&amp;guid=748ee61cbc6564da5bf9bfb9d36e1d4f&amp;type=3#DemoUSS" />
+    <ui:VisualElement name="container" class="container" style="flex-grow: 1; display: flex;">
+        <ui:Label tabindex="-1" text="Press Play" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 30px; -unity-font-style: bold;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="example-1" class="container">
+        <ui:VisualElement name="section" style="flex-grow: 1;">
+            <ui:VisualElement name="preview">
+                <ui:VisualElement name="circle-anim-first" class="circle-anim first-circle" style="width: 300px; height: 300px;">
+                    <ui:VisualElement name="circle-anim-second" class="circle-anim second-circle" style="width: 300px; height: 300px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="circle-anim-first" class="circle-anim first-circle" style="width: 300px; height: 300px;">
+                    <ui:VisualElement name="circle-anim-second" class="circle-anim second-circle" style="width: 300px; height: 300px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="circle-anim-first" class="circle-anim first-circle" style="width: 300px; height: 300px;">
+                    <ui:VisualElement name="circle-anim-second" class="circle-anim second-circle" style="width: 300px; height: 300px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="label">
+                <ui:Label tabindex="-1" text="Loading Animation" parse-escape-sequences="true" display-tooltip-when-elided="true" style="left: 41px;" />
+                <ui:Label tabindex="-1" text="Bounce Animation&#10;without Step delay" parse-escape-sequences="true" display-tooltip-when-elided="true" style="left: 0;" />
+                <ui:Label tabindex="-1" text="Bounce Animation&#10;with Step delay" parse-escape-sequences="true" display-tooltip-when-elided="true" style="left: -34px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="section">
+            <ui:VisualElement name="preview" style="flex-grow: 1;">
+                <ui:ProgressBar value="22" style="flex-grow: 1;" />
+                <ui:ProgressBar value="22" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="example-2" class="container" style="flex-grow: 1; justify-content: center;">
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+        <ui:VisualElement name="ring" />
+    </ui:VisualElement>
+    <ui:VisualElement name="example-3" class="container" style="flex-grow: 1; display: none;">
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" text="Hover on circle" style="font-size: 44px; -unity-font-style: bold;" />
+        <ui:VisualElement name="nav-bar">
+            <ui:VisualElement name="btns" style="flex-grow: 1; flex-direction: row; margin-bottom: 70px; justify-content: space-around; align-items: center;">
+                <ui:VisualElement />
+                <ui:VisualElement />
+                <ui:VisualElement />
+                <ui:VisualElement />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; position: absolute; bottom: 31px; align-self: center; width: 50%; height: 15px; background-color: rgb(130, 130, 130); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; opacity: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="example-4" class="container" style="flex-grow: 1;">
+        <ui:VisualElement name="container" class="login_reg_container" style="position: absolute;">
+            <ui:TextField picking-mode="Ignore" label="Email" value="filler text" password="true" keyboard-type="EmailAddress" />
+            <ui:TextField picking-mode="Ignore" label="Username" value="filler text" />
+            <ui:TextField picking-mode="Ignore" label="Password" value="filler text" password="true" />
+            <ui:Button text="Login" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="example-5" class="container" style="flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="container">
+            <ui:VisualElement name="circle" style="flex-grow: 1; position: absolute; align-self: center; width: 1000px; height: 1000px; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; background-color: rgb(228, 73, 98); scale: 0 0;" />
+            <ui:VisualElement class="curtain" style="flex-grow: 1;" />
+            <ui:VisualElement class="curtain" style="flex-grow: 1;" />
+            <ui:Label tabindex="-1" text="Click to animate" parse-escape-sequences="true" display-tooltip-when-elided="true" style="position: absolute; -unity-font-style: bold; font-size: 22px;" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

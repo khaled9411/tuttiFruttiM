@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Kostom/UI%20Toolkit%20Animation/Demo/UI%20Element/UXML/KeyframeUSS.uss?fileID=7433441132597879392&amp;guid=660cdd6830b1c47d5b87fe76c161d49e&amp;type=3#KeyframeUSS" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-color: rgb(31, 31, 31); align-items: center; justify-content: center;">
+        <ui:VisualElement name="Card" style="width: 100px; height: 100px; background-color: rgb(255, 255, 255); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+    </ui:VisualElement>
+</ui:UXML>

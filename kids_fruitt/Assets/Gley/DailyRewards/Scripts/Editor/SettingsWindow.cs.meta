@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 73db721abe843d64c8b6f893b69b1e2c
+timeCreated: 1579006239
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264442
+  packageName: Daily (Time Based) Rewards v2.0
+  packageVersion: 2.0.4
+  assetPath: Assets/Gley/DailyRewards/Scripts/Editor/SettingsWindow.cs
+  uploadId: 741879

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 120c85bb44ca6bb4d8652cf3838cf22c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264442
+  packageName: Daily (Time Based) Rewards v2.0
+  packageVersion: 2.0.4
+  assetPath: Assets/Gley/DailyRewards/Scripts/Internal/VisiualScriptingSupport/Playmaker/TimerButtonClicked.cs
+  uploadId: 741879

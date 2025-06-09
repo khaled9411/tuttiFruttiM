@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7cd58534488f849ce9e100f6cdfaeb56
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 295756
+  packageName: UI Toolkit Animation Lite
+  packageVersion: 1.2.0
+  assetPath: Assets/Kostom/UI Toolkit Animation/Demo/Keyframe & Sequencing/Keyframe.asset
+  uploadId: 728408

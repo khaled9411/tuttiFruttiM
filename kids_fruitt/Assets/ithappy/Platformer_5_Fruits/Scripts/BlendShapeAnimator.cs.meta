@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 974bdc1585a2f634e8b71d0faa7c4917
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 277594
+  packageName: Platformer 5 Fruits - Low Poly 3D Models Pack
+  packageVersion: 2.0
+  assetPath: Assets/ithappy/Platformer_5_Fruits/Scripts/BlendShapeAnimator.cs
+  uploadId: 731682

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a3addd359abf02f40aa46f0c28fd8f41
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264442
+  packageName: Daily (Time Based) Rewards v2.0
+  packageVersion: 2.0.4
+  assetPath: Assets/Gley/DailyRewards/Scripts/Internal/Constants.cs
+  uploadId: 741879

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 826e3fbbfdb9d9843a24a6e897a3af45
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264594
+  packageName: Easy IAP (In App Purchase) v2.0
+  packageVersion: 2.0.7
+  assetPath: Assets/Gley/EasyIAP/Scripts/Internal/EasyIAPData.cs
+  uploadId: 741889

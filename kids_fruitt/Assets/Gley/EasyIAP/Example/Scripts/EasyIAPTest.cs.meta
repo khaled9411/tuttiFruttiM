@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 4322276fa2029fb4fb0bd8cd75126693
+timeCreated: 1525803235
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264594
+  packageName: Easy IAP (In App Purchase) v2.0
+  packageVersion: 2.0.7
+  assetPath: Assets/Gley/EasyIAP/Example/Scripts/EasyIAPTest.cs
+  uploadId: 741889

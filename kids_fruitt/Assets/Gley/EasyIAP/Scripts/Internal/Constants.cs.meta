@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b76c1cc39858e39438bf067cccce63f4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264594
+  packageName: Easy IAP (In App Purchase) v2.0
+  packageVersion: 2.0.7
+  assetPath: Assets/Gley/EasyIAP/Scripts/Internal/Constants.cs
+  uploadId: 741889
