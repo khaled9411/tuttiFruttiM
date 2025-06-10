@@ -6044,8 +6044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - levelName: Level 16
-    isCompleted: 0
   - levelName: Level 1
     isCompleted: 0
   - levelName: Level 2
@@ -6075,6 +6073,10 @@ MonoBehaviour:
   - levelName: Level 14
     isCompleted: 0
   - levelName: Level 15
+    isCompleted: 0
+  - levelName: Level 16
+    isCompleted: 0
+  - levelName: Level 17
     isCompleted: 0
   levelButtonPrefab: {fileID: 8284781360228601386, guid: 4caf9cc00264b144f8fda76e1529b565, type: 3}
   levelButtonsContainer: {fileID: 663581479}
