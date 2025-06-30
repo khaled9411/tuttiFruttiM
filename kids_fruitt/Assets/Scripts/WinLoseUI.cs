@@ -112,6 +112,7 @@ public class WinLoseUI : MonoBehaviour
         audioSource.Play();
 
         StartCoroutine(ShowLoseScreenWithAnimation());
+
         // AudioManager.Instance.PlayLoseSound();
     }
 
@@ -166,7 +167,7 @@ public class WinLoseUI : MonoBehaviour
     {
         int highestUnlockedLevel = PlayerPrefs.GetInt("HighestUnlockedLevel");
 
-        if (highestUnlockedLevel < 15)
+        if (highestUnlockedLevel < 30)
         {
             PlayerPrefs.SetString("SelectedLevelPrefab", $"Level {highestUnlockedLevel}");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

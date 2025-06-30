@@ -24,7 +24,7 @@ MonoBehaviour:
         displayName: App ID
         required: 1
       idBanner:
-        id: 
+        id: ca-app-pub-1654123183473130/2204996470
         displayName: Banner ID
         required: 1
       idMRec:

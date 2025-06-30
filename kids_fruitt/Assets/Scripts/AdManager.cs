@@ -9,7 +9,8 @@ public class AdManager : MonoBehaviour
     [SerializeField] private float interstitialAdCooldown = 180f;
     [SerializeField] private float rewardedAdCooldown = 240f;
     [SerializeField] private int rewardAmount = 100;
-    /*[HideInInspector]*/ public GameObject rewardedAdButton;
+    /*[HideInInspector]*/
+    public GameObject rewardedAdButton;
 
     private float lastInterstitialTime;
     private float lastRewardedTime;
@@ -31,12 +32,12 @@ public class AdManager : MonoBehaviour
     private void Start()
     {
         Gley.MobileAds.API.Initialize();
-        //Gley.MobileAds.API.Initialize();
-        //Advertisements.Instance.Initialize();
 
         StartCoroutine(CheckRewardedAdsAvailability());
 
         UpdateRewardedAdButton();
+
+        Gley.MobileAds.API.ShowBanner(Gley.MobileAds.BannerPosition.Top, Gley.MobileAds.BannerType.Banner);
     }
 
     private void Update()
@@ -72,7 +73,10 @@ public class AdManager : MonoBehaviour
         while (true)
         {
             UpdateRewardedAdButton();
-            yield return new WaitForSeconds(1f);
+
+            Gley.MobileAds.API.ShowBanner(Gley.MobileAds.BannerPosition.Top, Gley.MobileAds.BannerType.Banner);
+
+            yield return new WaitForSeconds(5f);
         }
     }
 
@@ -83,15 +87,9 @@ public class AdManager : MonoBehaviour
         if (canShowInterstitial && Gley.MobileAds.API.IsInterstitialAvailable())
         {
             Gley.MobileAds.API.ShowInterstitial();
-            //Advertisements.Instance.ShowInterstitial(InterstitialClosed);
             lastInterstitialTime = Time.time;
             canShowInterstitial = false;
         }
-    }
-
-    private void InterstitialClosed(bool success)
-    {
-        Debug.Log("Skippable ad closed. Success: " + success);
     }
 
     public bool CanShowInterstitialAd()
