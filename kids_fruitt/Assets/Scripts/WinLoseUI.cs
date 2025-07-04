@@ -32,6 +32,10 @@ public class WinLoseUI : MonoBehaviour
     [SerializeField] private AudioClip loseClip;
     private AudioSource audioSource;
 
+    // Current level tracking
+    private int currentLevelIndex = -1;
+    private int highestUnlockedLevel = 0;
+
     // Messages
     private string[] winMessages = {
         "Awesome! You are a real hero!",
@@ -63,6 +67,10 @@ public class WinLoseUI : MonoBehaviour
             winScreenRect.localScale = Vector3.zero;
 
         audioSource = GetComponent<AudioSource>();
+
+        // Load current level index from PlayerPrefs
+        currentLevelIndex = PlayerPrefs.GetInt("SelectedLevelIndex", -1);
+        highestUnlockedLevel = PlayerPrefs.GetInt("HighestUnlockedLevel", 0);
     }
 
     private void Start()
@@ -102,6 +110,13 @@ public class WinLoseUI : MonoBehaviour
         audioSource.clip = winClip;
         audioSource.Play();
 
+        // Only unlock next level if player won the highest unlocked level
+        // and it's not a bonus level
+        if (currentLevelIndex == highestUnlockedLevel && !IsCurrentLevelBonus())
+        {
+            UnlockNextLevel();
+        }
+
         StartCoroutine(ShowWinScreenWithAnimation());
         // AudioManager.Instance.PlayWinSound();
     }
@@ -116,6 +131,63 @@ public class WinLoseUI : MonoBehaviour
         // AudioManager.Instance.PlayLoseSound();
     }
 
+    private bool IsCurrentLevelBonus()
+    {
+        // Check if current level is a bonus level
+        // This assumes bonus levels are marked with a specific naming convention
+        // or you can implement a more sophisticated check based on your level data
+        string selectedLevelName = PlayerPrefs.GetString("SelectedLevelPrefab", "");
+        return selectedLevelName.Contains("Bonus") || selectedLevelName.Contains("bonus");
+    }
+
+    private void UnlockNextLevel()
+    {
+        int nextLevelIndex = currentLevelIndex + 1;
+
+        // Check if there's a next level and it's currently locked
+        if (nextLevelIndex > highestUnlockedLevel)
+        {
+            // Find the next level to unlock, skipping bonus levels
+            int levelToUnlock = FindNextLevelToUnlock(nextLevelIndex);
+
+            if (levelToUnlock != -1 && levelToUnlock <= 29) // Make sure we don't exceed total levels
+            {
+                PlayerPrefs.SetInt("HighestUnlockedLevel", levelToUnlock);
+                PlayerPrefs.Save();
+                highestUnlockedLevel = levelToUnlock;
+
+                Debug.Log($"Level {currentLevelIndex} completed. Unlocked level {levelToUnlock}");
+            }
+        }
+    }
+
+    private int FindNextLevelToUnlock(int startIndex)
+    {
+        int levelToUnlock = startIndex;
+
+        // If the next level is a bonus level, skip it and unlock the level after it
+        if (IsLevelBonus(startIndex))
+        {
+            levelToUnlock = startIndex + 1;
+            Debug.Log($"Skipping bonus level {startIndex}, unlocking level {levelToUnlock} instead");
+        }
+
+        // Make sure we don't go beyond the maximum level count
+        if (levelToUnlock > 29)
+        {
+            return -1; // No more levels to unlock
+        }
+
+        return levelToUnlock;
+    }
+
+    private bool IsLevelBonus(int levelIndex)
+    {
+        // This is a simple check - you might want to make this more sophisticated
+        // based on your actual level data structure
+        return PlayerPrefs.GetInt($"Level_{levelIndex}_IsBonus", 0) == 1;
+    }
+
     private IEnumerator ShowWinScreenWithAnimation()
     {
         yield return new WaitForSeconds(winDelay);
@@ -124,6 +196,9 @@ public class WinLoseUI : MonoBehaviour
         winMessage.text = randomWinMessage;
 
         winScreen.SetActive(true);
+
+        // Check if Next Level button should be visible
+        UpdateNextLevelButtonVisibility();
 
         Sequence sequence = DOTween.Sequence();
 
@@ -135,6 +210,44 @@ public class WinLoseUI : MonoBehaviour
         {
             sequence.Append(button.DOScale(1f, animationDuration / 2).SetEase(Ease.OutBack));
         }
+    }
+
+    private void UpdateNextLevelButtonVisibility()
+    {
+        // Hide Next Level button if:
+        // 1. Current level is a bonus level
+        // 2. There's no next regular level available
+        // 3. Player hasn't reached the current level as their highest unlocked level
+
+        if (IsCurrentLevelBonus())
+        {
+            nextLevelButton.gameObject.SetActive(false);
+            return;
+        }
+
+        int nextRegularLevelIndex = GetNextRegularLevelIndex();
+
+        if (nextRegularLevelIndex == -1 || nextRegularLevelIndex > 29) // No next regular level
+        {
+            nextLevelButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            nextLevelButton.gameObject.SetActive(true);
+        }
+    }
+
+    private int GetNextRegularLevelIndex()
+    {
+        int nextIndex = currentLevelIndex + 1;
+
+        // Skip bonus levels
+        while (nextIndex <= 29 && IsLevelBonus(nextIndex))
+        {
+            nextIndex++;
+        }
+
+        return nextIndex <= 29 ? nextIndex : -1;
     }
 
     private IEnumerator ShowLoseScreenWithAnimation()
@@ -165,16 +278,23 @@ public class WinLoseUI : MonoBehaviour
 
     public void NextLevel()
     {
-        int highestUnlockedLevel = PlayerPrefs.GetInt("HighestUnlockedLevel");
-
-        if (highestUnlockedLevel < 30)
+        // Don't proceed if current level is a bonus level
+        if (IsCurrentLevelBonus())
         {
-            PlayerPrefs.SetString("SelectedLevelPrefab", $"Level {highestUnlockedLevel}");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            return;
         }
-        else
+
+        int nextRegularLevelIndex = GetNextRegularLevelIndex();
+
+        if (nextRegularLevelIndex != -1 && nextRegularLevelIndex <= highestUnlockedLevel)
         {
-            nextLevelButton.gameObject.SetActive(false);
+            // Set the next level as selected
+            PlayerPrefs.SetString("SelectedLevelPrefab", $"Level {nextRegularLevelIndex}");
+            PlayerPrefs.SetInt("SelectedLevelIndex", nextRegularLevelIndex);
+            PlayerPrefs.Save();
+
+            // Reload the scene to play the next level
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
