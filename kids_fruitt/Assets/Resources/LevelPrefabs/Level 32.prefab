@@ -373,7 +373,8 @@ PrefabInstance:
       value: Inclined road with fan V2 reverse 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8592853779489499206, guid: 021216ca814b5734f961a8545ef8c472, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021216ca814b5734f961a8545ef8c472, type: 3}
