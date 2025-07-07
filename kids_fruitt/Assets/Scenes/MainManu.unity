@@ -7083,6 +7083,10 @@ MonoBehaviour:
     isCompleted: 0
     isBonusLevel: 0
     bonusLevelPrice: 0
+  - levelName: Test Map
+    isCompleted: 0
+    isBonusLevel: 1
+    bonusLevelPrice: 100
   - levelName: Level 13
     isCompleted: 0
     isBonusLevel: 0
