@@ -7083,10 +7083,6 @@ MonoBehaviour:
     isCompleted: 0
     isBonusLevel: 0
     bonusLevelPrice: 0
-  - levelName: Test Map
-    isCompleted: 0
-    isBonusLevel: 1
-    bonusLevelPrice: 100
   - levelName: Level 13
     isCompleted: 0
     isBonusLevel: 0
@@ -7179,6 +7175,50 @@ MonoBehaviour:
     isCompleted: 0
     isBonusLevel: 0
     bonusLevelPrice: 0
+  - levelName: Level 36
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 37
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 38
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 39
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 40
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 41
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 42
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 43
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 44
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Level 45
+    isCompleted: 0
+    isBonusLevel: 0
+    bonusLevelPrice: 0
+  - levelName: Test Map
+    isCompleted: 0
+    isBonusLevel: 1
+    bonusLevelPrice: 100
   levelButtonPrefab: {fileID: 8284781360228601386, guid: 4caf9cc00264b144f8fda76e1529b565, type: 3}
   levelButtonsContainer: {fileID: 663581479}
   playButton: {fileID: 590204317}

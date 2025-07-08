@@ -560,6 +560,7 @@ MonoBehaviour:
   maxJumpVelocity: 10
   resetYVelocityOnJump: 1
   slopedSurfaceYVelocityThreshold: 3
+  doubleJumpForce: 7
 --- !u!135 &238511285
 SphereCollider:
   m_ObjectHideFlags: 0
